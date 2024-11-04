@@ -1,4 +1,3 @@
-// script.js
 function showPopup(sectionId) {
   // Hide all other sections
   document.querySelectorAll('.popup').forEach(section => {
