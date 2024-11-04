@@ -1,64 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shreya Thakur's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Thakur - B.Tech CSE Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Cute Font -->
 </head>
 <body>
-  <header>
-    <h1>Shreya Thakur</h1>
-    <p>Registration Number: RA2311003010555</p>
-    <p>2nd Year B.Tech CSE Core Student | SRMIST Chennai</p>
-  </header>
-
-  <nav>
-    <button onclick="showPopup('about')">About Me</button>
-    <button onclick="showPopup('skills')">Skills</button>
-    <button onclick="showPopup('certificates')">Courses & Certifications</button>
-    <button onclick="showPopup('contact')">Connect with Me</button>
-  </nav>
-
-  <main>
-    <section id="about" class="popup">
-      <h2>About Me</h2>
-      <p>I was born in Bokaro, Jharkhand, and am currently pursuing my B.Tech in Computer Science and Engineering at SRM Institute of Science and Technology, Chennai. I am passionate about coding, web development, and building innovative solutions. In my spare time, I enjoy learning new technologies and working on personal projects to expand my skill set.</p>
-      <button onclick="closePopup('about')">Close</button>
+    <header>
+        <div class="header-content">
+            <img src="profile.jpg" alt="Shreya Thakur's Profile Picture" class="profile-img">
+            <div class="header-text">
+                <h1>Hi, I’m Shreya Thakur</h1>
+                <p>2nd Year B.Tech CSE Core Student at SRM Institute of Science and Technology, Chennai</p>
+            </div>
+        </div>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I was born in Bokaro, Jharkhand, and am currently pursuing my B.Tech in Computer Science and Engineering at SRMIST Chennai. I am passionate about coding, web development, and building innovative solutions. In my spare time, I enjoy learning new technologies and working on personal projects to expand my skill set.</p>
+        <p>Email: <a href="mailto:shreyathakur2335@gmail.com">shreyathakur2335@gmail.com</a></p>
     </section>
 
-    <section id="skills" class="popup">
-      <h2>Skills</h2>
-      <ul>
-        <li>Programming Languages: Java, C++, Python</li>
-        <li>Web Development: HTML, CSS, JavaScript</li>
-        <li>Database Management: MySQL</li>
-      </ul>
-      <button onclick="closePopup('skills')">Close</button>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, Java, C, C++</li>
+            <li>Web Development: HTML, CSS, JavaScript, React</li>
+            <li>Database Management: SQL, MongoDB</li>
+            <li>Tools & Technologies: Git, Docker, AWS</li>
+            <li>Problem Solving: Data Structures & Algorithms</li>
+            <li>Competitive Programming: Participation in various competitions</li>
+        </ul>
     </section>
 
-    <section id="certificates" class="popup">
-      <h2>Courses & Certifications</h2>
-      <ul>
-        <li>Udemy - Data Structures and Algorithms</li>
-        <li>CodeChef - Competitive Programming Challenges</li>
-        <li>LeetCode - Data Structures Practice</li>
-        <li>Web Development Course - HTML, CSS, JavaScript</li>
-        <li>Advanced Java Programming</li>
-      </ul>
-      <button onclick="closePopup('certificates')">Close</button>
+    <section id="courses">
+        <h2>Courses & Certifications</h2>
+        <ul>
+            <li>Udemy - Data Structures and Algorithms</li>
+            <li>CodeChef - Competitive Programming Challenges</li>
+            <li>Coursera - Full Stack Web Development</li>
+            <li>edX - Cloud Computing Basics</li>
+        </ul>
     </section>
 
-    <section id="contact" class="popup">
-      <h2>Connect with Me</h2>
-      <p>Email: <a href="mailto:shreyathakur2335@gmail.com">shreyathakur2335@gmail.com</a></p>
-      <button onclick="closePopup('contact')">Close</button>
-    </section>
-  </main>
+    <footer>
+        <p>Connect with me on LinkedIn | GitHub | Twitter</p>
+    </footer>
 
-  <footer>
-    <p>&copy; 2024 Shreya Thakur</p>
-  </footer>
+    <script src="script.js"></script>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
