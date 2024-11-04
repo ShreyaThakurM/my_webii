@@ -17,3 +17,10 @@ function closePopup(sectionId) {
     section.style.display = 'none';
   }
 }
+
+// Initialize popup visibility on page load
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.popup').forEach(section => {
+    section.style.display = 'none'; // Ensure all popups are hidden initially
+  });
+});
