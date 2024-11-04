@@ -1,77 +1,17 @@
 body {
-  background-color: #ffe6f2;
   font-family: Arial, sans-serif;
+  background-color: #ffeef8; /* Light pink background */
   color: #333;
 }
 
 header {
   text-align: center;
-  background-color: #ffb3cc;
   padding: 20px;
-  border-radius: 15px;
-}
-
-header h1 {
-  color: #e60073;
 }
 
 nav {
   text-align: center;
-  margin: 20px;
-}
-
-nav button {
-  background-color: #ff66a3;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  border-radius: 10px;
-  font-size: 16px;
-}
-
-nav button:hover {
-  background-color: #e60073;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.popup {
-  display: none;
-  background-color: #ffccdd;
-  border: 2px solid #ff80b3;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 20px;
-  width: 80%;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #ffb3cc;
-  color: #e60073;
-  border-radius: 15px;
-  margin-top: 20px;
-}
-/* style.css */
-.popup {
-  display: none; /* Hidden by default */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border: 2px solid #f0a1b6; /* Pink border */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
 }
 
 button {
@@ -86,4 +26,22 @@ button {
 
 button:hover {
   background-color: #e387a5;
+}
+
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #f0a1b6; /* Pink border */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
 }
