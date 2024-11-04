@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Pacifico', cursive; /* Cute font */
+    font-family: 'Times New Roman', Times, serif; /* Change to Times New Roman */
     background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Light pink gradient */
     color: #4A4A4A;
     transition: background-color 0.5s, color 0.5s;
@@ -107,4 +107,3 @@ body.dark-mode section {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-
